@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Javascript Quiz</title>
+  </head>
+  <body>
+    <main>
+     <header>
+        <h3><a href="highscore.html">High Scores</a></h3>
+        <h1>Javascript Quiz for Beginners</h1>
+        <h3>Time: <label id="timer"></label></h3>
+     </Header>
+      <div id="divtext">
+          <h2 id="question"></h2>
+          <ul>
+            <li id="answer1"></li>
+            <li id="answer2"></li>
+            <li id="answer3"></li>
+            <li id="answer4"></li>
+          </ul>          
+      </div>
+      <div>
+        <h4><label id="lblresults">0</label></h4>
+      </div>
+      <div>
+        <button  id="startquiz">Start Quiz</button>       
+      </div>   
+      <div id="Results">
+        <h4><label id="lblhighscorename">Initials</label> <input type="text" id="highscorename"/> <button  id="savehighscore">Submit</button></h4>
+      </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

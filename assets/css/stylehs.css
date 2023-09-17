@@ -1,0 +1,60 @@
+body{
+    
+    background-color:cornflowerblue;
+    
+
+}
+
+main{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+
+
+
+h1{
+    text-decoration: underline;    
+}
+
+
+h4{
+    margin: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+ display: flex;
+ justify-content: space-between;
+ font-size: x-large;
+}
+
+#clearhs{
+    width: 150px;
+    height: 25px;
+    margin-left: 50px;
+}
+
+/* Cards are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 16px;
+    }
+    h3 {
+        font-size: 12px;
+      }
+    
+  }
