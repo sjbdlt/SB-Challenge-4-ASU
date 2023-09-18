@@ -19,28 +19,31 @@ function init(){
 
 function gethighscore(){
 
-const storedArray = localStorage.getItem('scores');
+    const storedArray = localStorage.getItem('scores');
+    const myArray = storedArray ? JSON.parse(storedArray) : [];
+
+    myArray.sort((a, b) => {
+        const scoresa = a.score
+        const scoresb = b.score
+        return scoresb - scoresa; 
+    });
+
+    const hslist = document.getElementById('highlist');
+
+    myArray.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.textContent = item.score;
+    hslist.appendChild(listItem);
+    });
 
 
+    const hslistname = document.getElementById('highlistname');
 
-const myArray = storedArray ? JSON.parse(storedArray) : [];
-
-myArray.sort((a, b) => {
-    const scoresa = a.score
-    const scoresb = b.score
-
-
-    return scoresb - scoresa; 
-});
-
-const hslist = document.getElementById('highlist');
-
-// Loop through the array and create a list item for each item
-myArray.forEach(item => {
-  const listItem = document.createElement('li');
-  listItem.textContent = item.name + ' ' + item.score;
-  hslist.appendChild(listItem);
-});
+    myArray.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.textContent = item.name;
+    hslistname.appendChild(listItem);
+    });
 
 }
 

@@ -34,12 +34,23 @@ h4{
 
 ul{
     list-style-type: none;
+    display: grid;
+    justify-content: space-between;
 }
 
-ul li{
+#highlist li{
  display: flex;
- justify-content: space-between;
  font-size: x-large;
+ width: 40px;
+ margin-bottom: 5px;
+}
+
+#highlistname li{
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    margin-bottom: 5px;
+    width: 200px;
 }
 
 #clearhs{
